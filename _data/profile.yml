@@ -1,18 +1,16 @@
-primary_name: "Your Name"
+primary_name: "灯下"
 secondary_name: ""
-navbar_name: "Your Name"
+navbar_name: "灯下"
 
 positions:
-- name: Title or Position
-- name: Affiliation Name
-  logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+- name: 货拉拉司机
 
 
 email: "your@email.com"
 # cv_link: link-to-your-cv-file
-gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
-twitter: your_twitter_id  # Do not include the '@' symbol
+# gscholar: xFmQpf4AAAAJ
+# github: your_github_id
+# twitter: your_twitter_id
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
@@ -22,40 +20,34 @@ twitter: your_twitter_id  # Do not include the '@' symbol
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    2009年大学毕业了。曾从事网站设计，画过软件界面，干过制造业销售，如今是一名货拉拉司机。
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    40岁了，决定重新开始搭建自己的生活。这个网站，就是第一步。不急着知道终点在哪，先往前走一步，再看看下一步。
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
 portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+  四十岁，重新出发。
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
-  position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+- name: 浙江万里学院
+  position: 本科
+  date: Sep. 2005 - Jul. 2009
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: 网站设计与软件UI
+  position: 设计师
+  date: 2009 - 2013
+- name: 制造业
+  position: 销售
+  date: 2016 - 2026
+- name: 货拉拉
+  position: 司机
+  date: 2026 - present
 
 awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+- name: 买了一辆车，开始跑货拉拉
+  date: 2026
+- name: 四十岁，重新开始搭建自己的生活
+  date: 2026
