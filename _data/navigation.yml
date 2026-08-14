@@ -4,3 +4,5 @@ pages:
   url: /
 - name: 博客
   url: /blog
+- name: 展示
+  url: /showcase
