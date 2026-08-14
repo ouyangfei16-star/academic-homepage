@@ -124,6 +124,20 @@ a:hover { color: #314c36; }
 .archive-year { color: #3d493c; font-size: 1.55rem; font-weight: 700; margin-bottom: 1rem; }
 .archive-year span { color: #969a8b; font-family: "Lato", sans-serif; font-size: 0.78rem; font-weight: 400; margin-left: 0.35rem; }
 
+.journey-heading { border-bottom: 1px solid #e8e9e1; padding-bottom: 1.15rem; }
+.journey-section { position: relative; }
+.journey-section + .journey-section { border-left: 1px solid #e8e9e1; padding-left: 2rem; }
+.journey-section-title { color: #475648; font-size: 1rem; font-weight: 700; margin: 0 0 1.3rem; }
+.journey-section-title i { color: #8a9b70; font-size: 0.88rem; margin-right: 0.4rem; width: 1rem; }
+.journey-items { position: relative; }
+.journey-item { display: flex; min-height: 3.85rem; position: relative; }
+.journey-item:not(:last-child)::before { background: #dce2d3; content: ""; height: calc(100% - 0.72rem); left: 0.28rem; position: absolute; top: 0.72rem; width: 1px; }
+.journey-dot { background: #a0ad84; border: 3px solid #eff2e9; border-radius: 50%; flex: 0 0 auto; height: 0.7rem; margin: 0.28rem 0.8rem 0 0; position: relative; width: 0.7rem; z-index: 1; }
+.journey-item-content { color: #777b70; flex: 1; font-family: "Lato", "Noto Serif SC", sans-serif; font-size: 0.83rem; line-height: 1.6; padding-bottom: 0.8rem; }
+.journey-item-topline { align-items: baseline; display: flex; gap: 0.7rem; justify-content: space-between; }
+.journey-item strong { color: #41483e; font-family: "Noto Serif SC", serif; font-size: 0.95rem; font-weight: 600; }
+.journey-item time { color: #969b8c; flex: 0 0 auto; font-size: 0.72rem; white-space: nowrap; }
+
 .footer { background: transparent !important; border-color: rgba(79, 85, 67, 0.12) !important; }
 
 @media (max-width: 767.98px) {
@@ -132,6 +146,8 @@ a:hover { color: #314c36; }
     .journal-card { padding: 1.2rem !important; }
     .navbar .nav-link { margin-left: 0; }
     .navbar .nav-item.active .nav-link::after { margin-left: 0; }
+    .journey-section + .journey-section { border-left: 0; border-top: 1px solid #e8e9e1; padding: 1.5rem 0 0; }
+    .journey-section { padding-bottom: 0.2rem; }
 }
 
 .inline-badge {
