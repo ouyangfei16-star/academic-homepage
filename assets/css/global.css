@@ -1,8 +1,11 @@
 @charset "utf-8";
 body {
-    font-family: "Lato", sans-serif;
+    background: #f8f6f1 !important;
+    color: #2f302c;
+    font-family: "Noto Serif SC", "Songti SC", "STSong", serif;
     font-weight: 400;
-    padding-top: 5.0rem;
+    padding-top: 5.5rem;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -43,9 +46,92 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.6) !important;
+    background-color: rgba(250, 249, 246, 0.86) !important;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(77, 82, 68, 0.1);
+    box-shadow: none !important;
+}
+
+.navbar-brand {
+    color: #364438 !important;
+    font-size: 1.2rem;
+    letter-spacing: 0.12em;
+}
+
+.navbar .nav-link {
+    color: #6a6d63 !important;
+    margin-left: 0.7rem;
+    padding: 0.55rem 0.35rem !important;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-item.active .nav-link,
+.navbar .nav-link:hover {
+    color: #415b45 !important;
+}
+
+.navbar .nav-item.active .nav-link::after {
+    background: #8c9c72;
+    border-radius: 99px;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 3px auto -5px;
+    width: 14px;
+}
+
+a { color: #547157; }
+a:hover { color: #314c36; }
+
+.shadow-sm {
+    box-shadow: 0 10px 30px rgba(61, 67, 51, 0.07) !important;
+}
+
+.card, .rounded-xl {
+    border: 1px solid rgba(79, 85, 67, 0.09) !important;
+}
+
+.home-layout { margin-top: 1.5rem; }
+
+.intro-card { overflow: hidden; position: relative; }
+.intro-card::before {
+    background: #9faf86;
+    content: "";
+    height: 100%; left: 0; opacity: 0.75; position: absolute; top: 0; width: 5px;
+}
+.section-eyebrow, .post-kicker {
+    color: #788660;
+    font-family: "Lato", sans-serif;
+    font-size: 0.73rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+.text-profile-bio { color: #51544c; font-size: 1.02rem; line-height: 2; }
+.text-profile-bio p:last-child { margin-bottom: 0; }
+
+.journal-list { overflow: hidden; }
+.journal-list > h6 { color: #39463b; font-size: 0.95rem; letter-spacing: 0.04em; }
+.journal-card { border-color: rgba(79, 85, 67, 0.1) !important; padding: 1.45rem 1.6rem !important; transition: background-color 0.2s ease; }
+.journal-card:hover { background: #fcfbf8; }
+.journal-card h2 { font-size: 1.22rem; font-weight: 700; letter-spacing: 0.015em; }
+.journal-card h2 a { color: #30372e !important; }
+.journal-card h2 a:hover { color: #567356 !important; }
+.journal-card .text-muted { color: #85877e !important; line-height: 1.8; }
+.journal-card .badge, .post-meta .badge { background: #edf0e7; border-radius: 99px; color: #657255; font-weight: 500; padding: 0.28rem 0.55rem; }
+
+.archive-year { color: #3d493c; font-size: 1.55rem; font-weight: 700; margin-bottom: 1rem; }
+.archive-year span { color: #969a8b; font-family: "Lato", sans-serif; font-size: 0.78rem; font-weight: 400; margin-left: 0.35rem; }
+
+.footer { background: transparent !important; border-color: rgba(79, 85, 67, 0.12) !important; }
+
+@media (max-width: 767.98px) {
+    body { padding-top: 4.7rem; }
+    .home-layout { margin-top: 0; }
+    .journal-card { padding: 1.2rem !important; }
+    .navbar .nav-link { margin-left: 0; }
+    .navbar .nav-item.active .nav-link::after { margin-left: 0; }
 }
 
 .inline-badge {

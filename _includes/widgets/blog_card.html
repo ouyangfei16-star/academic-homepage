@@ -3,14 +3,14 @@
 {% assign first = include.first %}
 {% assign last = include.last %}
 
-<div class="border-bottom border-gray p-3 {% if hide_bottom_border %}border-0{% endif %}">
+<article class="journal-card border-bottom border-gray p-3 {% if hide_bottom_border %}border-0{% endif %}">
     <div class="row">
         <div class="col-12">
-            <h5 class="mb-2">
+            <h2 class="h5 mb-2">
                 <a href="{{ item.url | relative_url }}" class="text-dark text-decoration-none">
                     {{ item.title }}
                 </a>
-            </h5>
+            </h2>
             <div class="text-muted small mb-2">
                 <i class="fas fa-calendar-alt"></i> {{ item.date | date: "%Y年%m月%d日" }}
                 {% if item.tags %}
@@ -36,4 +36,4 @@
             </div>
         </div>
     </div>
-</div>
+</article>

@@ -4,7 +4,10 @@
 
 /* Blog content styling */
 .blog-content {
-    line-height: 1.7;
+    color: #3c3e38;
+    font-size: 1.08rem;
+    line-height: 2;
+    padding: 0 3rem 3.25rem;
 }
 
 .blog-content h1,
@@ -13,7 +16,8 @@
 .blog-content h4,
 .blog-content h5,
 .blog-content h6 {
-    margin-top: 2rem;
+    color: #303a30;
+    margin-top: 2.8rem;
     margin-bottom: 1rem;
     font-weight: 500;
 }
@@ -25,9 +29,9 @@
 }
 
 .blog-content h2 {
-    font-size: 1.5rem;
-    border-bottom: 1px solid #e9ecef;
-    padding-bottom: 0.25rem;
+    font-size: 1.55rem;
+    border-bottom: 1px solid #e6e6de;
+    padding-bottom: 0.55rem;
 }
 
 .blog-content h3 {
@@ -49,11 +53,13 @@
 }
 
 .blog-content blockquote {
-    border-left: 3px solid #e0e0e0;
-    padding-left: 1rem;
-    margin: 1.5rem 0;
-    font-style: italic;
-    color: #6c757d;
+    background: #f5f6ef;
+    border-left: 3px solid #9eaa83;
+    border-radius: 0 0.4rem 0.4rem 0;
+    padding: 1rem 1.25rem;
+    margin: 2rem 0;
+    font-style: normal;
+    color: #5c6257;
 }
 
 .blog-content img {
@@ -179,11 +185,11 @@ h1, h2, h3, h4, h5, h6,
     display: flex;
     justify-content: center;
     padding: 0 15px;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .blog-main {
-    flex: 0 1 950px;
+    flex: 0 1 840px;
     min-width: 0;
 }
 
@@ -206,7 +212,7 @@ h1, h2, h3, h4, h5, h6,
     max-height: calc(100vh - 8rem);
     overflow-y: auto;
     padding-left: 0.75rem;
-    border-left: 2px solid #f0f0f0;
+    border-left: 1px solid #dfe2d6;
 }
 
 .blog-toc-title {
@@ -239,12 +245,12 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .blog-toc-list a:hover {
-    color: #2d3436;
+    color: #557054;
     text-decoration: none;
 }
 
 .blog-toc-list a.toc-active {
-    color: #212529;
+    color: #466246;
     font-weight: 600;
 }
 
@@ -263,4 +269,17 @@ h1, h2, h3, h4, h5, h6,
 
 .blog-toc-nav {
     scrollbar-width: none;
+}
+
+.post-article { overflow: hidden; }
+.post-header { background: linear-gradient(135deg, #f7f8f2, #fffefb); border-bottom: 1px solid #e9eadf; padding: 3.1rem 3rem 2.4rem; }
+.post-header h1 { color: #303b30; font-size: clamp(2rem, 5vw, 3rem); letter-spacing: 0.02em; line-height: 1.35; margin: 0 0 1.2rem; }
+.post-kicker { margin-bottom: 0.65rem; }
+.post-meta { color: #85887c; font-family: "Lato", sans-serif; font-size: 0.88rem; }
+
+@media (max-width: 767.98px) {
+    .blog-layout-wrapper { padding: 0; }
+    .post-header { padding: 2.25rem 1.35rem 1.75rem; }
+    .blog-content { font-size: 1rem; line-height: 1.9; padding: 0 1.35rem 2.25rem; }
+    .blog-content h2 { font-size: 1.35rem; margin-top: 2.25rem; }
 }
