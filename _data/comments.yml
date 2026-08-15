@@ -1,0 +1,6 @@
+enabled: true
+provider: utterances
+repo: ouyangfei16-star/academic-homepage
+issue_term: pathname
+label: comment
+theme: github-light

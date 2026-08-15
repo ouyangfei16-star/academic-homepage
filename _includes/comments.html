@@ -1,0 +1,20 @@
+{% assign comments = site.data.comments %}
+{% if comments.enabled and page.comments != false %}
+<section class="comments-section" aria-labelledby="comments-title">
+    <div class="comments-heading">
+        <p class="section-eyebrow mb-2">留下一句话</p>
+        <h2 id="comments-title">留言板</h2>
+        <p>欢迎分享你的想法。留言需要使用 GitHub 账号登录。</p>
+    </div>
+    {% if comments.provider == "utterances" and comments.repo %}
+    <script src="https://utteranc.es/client.js"
+            repo="{{ comments.repo }}"
+            issue-term="{{ comments.issue_term | default: 'pathname' }}"
+            label="{{ comments.label | default: 'comment' }}"
+            theme="{{ comments.theme | default: 'github-light' }}"
+            crossorigin="anonymous"
+            async>
+    </script>
+    {% endif %}
+</section>
+{% endif %}

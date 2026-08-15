@@ -276,10 +276,15 @@ h1, h2, h3, h4, h5, h6,
 .post-header h1 { color: #303b30; font-size: clamp(2rem, 5vw, 3rem); letter-spacing: 0.02em; line-height: 1.35; margin: 0 0 1.2rem; }
 .post-kicker { margin-bottom: 0.65rem; }
 .post-meta { color: #85887c; font-family: "Lato", sans-serif; font-size: 0.88rem; }
+.comments-section { background: #fff; border: 1px solid rgba(79, 85, 67, 0.09); border-radius: 0.8rem; box-shadow: 0 10px 30px rgba(61, 67, 51, 0.05); margin-bottom: 2.5rem; padding: 2.4rem 3rem; }
+.comments-heading { border-bottom: 1px solid #e9eadf; margin-bottom: 1.7rem; padding-bottom: 1.25rem; }
+.comments-heading h2 { color: #344235; font-size: 1.45rem; margin: 0 0 0.45rem; }
+.comments-heading p:last-child { color: #83877c; font-size: 0.9rem; margin-bottom: 0; }
 
 @media (max-width: 767.98px) {
     .blog-layout-wrapper { padding: 0; }
     .post-header { padding: 2.25rem 1.35rem 1.75rem; }
     .blog-content { font-size: 1rem; line-height: 1.9; padding: 0 1.35rem 2.25rem; }
     .blog-content h2 { font-size: 1.35rem; margin-top: 2.25rem; }
+    .comments-section { border-radius: 0.7rem; padding: 1.75rem 1.35rem; }
 }
