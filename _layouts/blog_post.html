@@ -31,7 +31,7 @@
                         <h1>{{ page.title }}</h1>
                         <div class="post-meta">
                             <i class="fas fa-calendar-alt"></i> {{ page.date | date: "%Y年%m月%d日" }}
-                            <span class="post-views" id="busuanzi_container_page_pv">
+                            <span class="post-views" id="busuanzi_container_page_pv" hidden>
                                 <i class="far fa-eye"></i> 阅读 <span id="busuanzi_value_page_pv"></span> 次
                             </span>
                             {% if page.tags %}
@@ -74,7 +74,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" crossorigin="anonymous"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.js" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/page-view-counter.js' | relative_url }}"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             renderMathInElement(document.body, {
